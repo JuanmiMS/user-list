@@ -9,4 +9,4 @@ To run the project in production mode: `npm run build`
 
 PSA: after running `npm run build`, a new folder called 'build' will appear, you only need to open the file index.html with your favourite browser.
 
-You can see the live version here: https://user-list.netlify.app/. Be patient, it's a free plan and the coneccion is slow :)
+You can see the live version here: https://user-list-react.netlify.app/. Be patient, it's a free plan and the coneccion is slow :)
