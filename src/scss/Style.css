@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html {
+  font-family: "Nunito", sans-serif;
+  overflow-y: hidden;
+}
+body {
+  background: rgba(225, 225, 225, 0.5);
+  margin-top: 0;
+  width: 70%;
+  margin: 0 auto;
+}
+.header {
+  background-color: #2eacff;
+  padding: 0 20px 20px 20px;
+}
+.header .logo {
+  left: inherit;
+  width: 100px;
+  max-width: 100%;
+  height: 80px;
+}
+.container {
+  background-color: #fff;
+  height: 100vh;
+}
+.wrap {
+  align-items: stretch;
+  margin: auto;
+  margin-top: 5px;
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.cards .card {
+  margin: 10px;
+  width: 20%;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 2px 2px 15px 2px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s;
+  animation: fadein 2s;
+}
+.cards .card:hover {
+  box-shadow: 0px 0px 26px 0px #2eacff;
+}
+.cards .card img {
+  width: 70%;
+  border-radius: 50%;
+  margin: -60px auto 10px;
+  display: block;
+  border: 3px solid #fff;
+}
+.cards .card .top-card {
+  background: url(https://www.taotesting.com/wp-content/themes/oat/images/footer-bg.jpg);
+  height: 100px;
+}
+.information {
+  text-align: center;
+}
+.information h2 {
+  margin-top: 0;
+  color: #102232;
+  font-weight: 600;
+}
+.information h2::first-letter {
+  text-transform: capitalize;
+}
+.search-user {
+  background: #fff;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 15px;
+  display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+  font-size: 1.5em;
+}
+.search-user:focus {
+  outline: none;
+  border-bottom: 1px solid #2eacff;
+}
+.button {
+  display: inline-block;
+  margin-bottom: 0.9375em;
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.75em 1.125em;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.button--primary {
+  background-color: #2eacff;
+  text-align: center;
+  color: #fff;
+}
+.button--primary:hover {
+  border-color: #2eacff;
+  background-color: #fff;
+  color: #2eacff;
+}
+.btn-slider {
+  width: 30px;
+  border: none;
+  background: transparent;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+#scroll-down-info {
+  position: absolute;
+  left: 50%;
+  bottom: 27px;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+#scroll-down-info p {
+  padding: 13px;
+  border-radius: 30px;
+  background-color: #014074;
+  color: white;
+  position: relative;
+  left: -50%;
+}
+.no-results {
+  text-align: center;
+  color: grey;
+  font-style: italic;
+  font-size: 15px;
+}
+.tooltip-info {
+  font-size: 20px !important;
+  pointer-events: auto !important;
+  background-color: #2eacff !important;
+}
+.tooltip-info:hover {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2eacff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+@media (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+  .header {
+    padding: 0 20px 10px 20px;
+  }
+  .search-user {
+    margin: 0;
+  }
+  .cards {
+    display: block;
+  }
+  .cards .card {
+    width: 100%;
+    margin: 0;
+  }
+}
